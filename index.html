@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>和记租车</title>
+	<style>
+	  body,p,img,ul,h3{
+	  	margin: 0;
+	  	padding: 0;
+	  }
+	  .clearfix:after{
+	  	content: '';
+	  	clear: both;
+	  	display: block;
+	  }
+	  ul{
+	  	list-style: none;
+	  }
+	  a{
+	  	text-decoration: none;
+	  	color: #4F4F4F;
+	  }
+	  body{
+	  	font-family: "微软雅黑";
+	  	border-top: 4px solid #F08D18;
+	  	width: 1440px;
+	  	margin: 0 auto;
+	  }
+	  .gwidth{
+	  	width: 1440px;
+	  	margin: 0 auto;
+	  }
+	  #header{
+	  	width: 1140px;
+	  }
+	  #header .l{
+	  	float: left;
+	  }
+	  #header .l .img1{
+	  	margin-right: 30px;
+	  }
+	  #header .r{
+	  	float: right;
+	  }
+	  #header .r ul{
+	  	position: relative;
+	  	top: 20px;
+	  	left: 20px;
+	  }
+	  #header .r li{
+	  	float: left;
+	  	font-size: 12px;
+	  }
+	  #header .r .li1{
+	  	color: #EF8D18;
+	  }
+	  #header .r li .qq{
+	  	display: inline-block;
+	  	width: 77px;
+	  	height: 22px;
+	  	background: url('images/h3.gif') no-repeat #AFE4FD ;
+	  }
+	  #header .r li span .q{
+	  	margin-left: 24px;
+	  	position: relative;
+	  	top: 2px;
+	  }
+	  #header .r div{
+	  	font-weight: bold;
+	  	font-size: 18px;
+	  	position: relative;
+	  	top: 30px;
+	  }
+	  #header .r div img{
+	  	position: relative;
+	  	top: 6px;
+	  	margin-left: 120px;
+	  }
+	  #nav{
+	  	height: 52px;
+	  	background-color: #272727;
+	  }
+	  #nav ul{
+	  	width: 1140px;
+	  	margin-left: 150px;
+	  }
+	  #nav ul li{
+	  	float: left;
+	  	width: 120px;
+	  	text-align: center;
+	  	height: 52px;
+	  	line-height: 52px;
+	  	font-size: 14px;
+	  }
+	  #nav ul li:hover{
+	  	background: url('images/n1.gif');
+	  }
+	  #nav a{
+	  	color: #fff;
+	  }
+	  #nav .n1{
+	  	background: url('images/n1.gif');
+	  }
+	  #main{
+	  	background: url('images/m1.gif');
+	  	width: 1440px;
+	  	height: 320px;
+	  	margin-bottom: 40px;
+	  }
+	  #main .m1{
+	  	width: 370px;
+	  	height: 308px;
+	  	position: relative;
+	  	top: 25px;
+	  	left: 150px;
+	  	background: #fff;
+	  	box-shadow: darkgrey 0px 5px 30px 0px;
+	  }
+	  #main .m1 li{
+	  	float: left;
+	  	width: 180px;
+	  	height: 48px;
+	  	line-height: 48px;
+	  	text-align: center;
+	  	font-size: 16px;
+	  	background-color: #ccc;
+			border-bottom: 2px solid #4B4A48;
+	  }
+	  #main .m1 .act{
+	  	width: 185px;
+	  	background-color: #fff;
+			border: 2px solid #4B4A48;
+			border-bottom: none;
+	  }
+	  #main .m1 .contents{
+	  	height: 306px;
+			border: 2px solid #4B4A48;
+	  	border-top: none;
+	  }
+	  #main .m1 .contents div{
+	  	display: none;
+	  	padding: 20px;
+	  }
+	  #main .m1 .contents .show{
+	  	display: block;
+	  }
+	  #main .m1 .contents .show form{
+	  	color: #272727;
+	  	font-size: 14px;
+	  	line-height: 50px;
+	  }
+	  #main .m1 .contents .show form .i1{
+	  	width: 186px;
+	  	height: 32px;
+	  	color: #656565;
+	  	font-size: 12px;
+	  	padding-left: 10px;
+	  }
+	  #main .m1 .contents .show .sjx{
+	  	display: inline-block;
+	  	width: 0;
+	  	height: 0;
+	  	border-top: 5px solid #000;
+	  	border-left: 5px solid transparent;
+	  	border-right: 5px solid transparent;
+	  	position: relative;
+	  	left: -20px;
+	  }
+	  #main .m1 .contents .show form .i2{
+	  	width: 90px;
+	  	height: 30px;
+	  	color: #656565;
+	  	font-size: 12px;
+	  	padding-left: 10px;
+	  }
+	  #main .m1 .contents .show form .ii2{
+	  	margin-left: 10px;
+	  }
+	  #main .m1 .contents .show form .i3{
+	  	background-color: #F08D18;
+	  	width: 132px;
+	  	height: 35px;
+	  	position: relative;
+	  	color: #fff;
+	  	position: relative;
+	  	left: 88px;
+	  	border: none;
+	  }
+	  #content{
+	  	width: 1140px;
+	  	margin: 0 auto;
+	  }
+	  #content .l{
+	  	float: left;
+	  	width: 815px;
+	  	position: relative;
+	  }
+	  #content .l .div{
+	  	float: left;
+	  }
+	  #content .l .div p{
+	  	text-align: center;
+	  	font-size: 12px;
+	  	color: #272727;
+	  }
+	  #content .l .div .jc{
+	  	font-weight: bold;
+	  }
+	  #content .pp{
+	  	line-height: 30px;
+	  	text-align: right;
+	  	border-bottom: 2px solid #4B4A48;
+	  	margin-bottom: 12px;
+	  }
+	  #content .p1{
+	  	float: left;
+	  	font-size: 20px;
+	  	color: #EF8D18;
+	  }
+	  #content .p2{
+	  	font-size: 12px;
+	  }
+	  #content .t .l img{
+	  	padding: 0px 32px 10px 0;
+	  	display: inline-block;
+	  }
+	  #content .t .l .img{
+	  	padding-right: 0;
+	  }
+	  #content .t .l span img{
+	  	position: absolute;
+	  }
+	  #content  .r{
+	  	width: 306px;
+	  	float: left;
+	  	margin-left: 19px;
+	  }
+	  #content .t .r .div img{
+	  	float: left;
+	  	margin-bottom: 6px;
+	  	margin-right: 6px;
+	  }
+	  #content .t .r .div .img{
+	  	margin-right: 0;
+	  }
+	  #content .c{
+	  	width: 1140px;
+	  	height: 72px;
+	  	margin: 0 auto;
+	  	border: 1px solid #CACAD9;
+	  	/*margin-top: 16px;*/
+	  	margin-bottom: 15px;
+	  }
+	  #content .c .c1{
+	  	position: relative;
+	  	top: -16px;
+	  	display: inline-block;
+	  	width: 40px;
+	  	height: 40px;
+	  	line-height: 40px;
+	  	border-radius: 50%;
+	  	background-color: #F08D18;
+	  	color: #fff;
+	  	text-align: center;
+	  	margin-right: 5px;
+	  }
+	  #content .c .zuo,#content .c .zhong,#content .c .you{
+	  	width: 260px;
+	  	float: left;
+	  	margin: -75px 10px 0px 100px;
+	  }
+	  #content .c .zuo,#content .c .zhong{
+	  	background: url('images/cc1.gif') no-repeat right 75px;
+	  }
+	  #content .c .c2{
+	  	display: inline-block;
+	  }
+	  #content .c .c2 .ccc{
+	  	color: #272727;
+	  	line-height: 28px;
+	  }
+	  #content .c .c2 .cc1{
+	  	font-size: 18px;
+	  }
+	  #content .c .c2 .cc2{
+	  	font-size: 12px;
+	  }
+	  #content .b .div{
+	  	padding-bottom: 20px;
+	  }
+	  #content .b .div img{
+	  	padding-right: 30px;
+	  }
+	  #content .b .div .img3,#content .b .div .img5{
+	  	padding-right: 0px;
+	  }
+	  #content .b .r{
+	  	height: 312px;
+	  	display: inline-block;
+	  	background: url('images/cb7.gif') no-repeat right bottom ;
+	  	background-size: 12em;
+	  }
+	  #content .b .r li{
+	  	padding-left: 10px;
+	  	font-size: 12px;
+	  	color: #272727;
+	  	line-height: 30px;
+	  	background: url('images/cb6.gif') no-repeat left;
+	  }
+	  #content .zx li{
+	  	float: left;
+	  	font-size: 12px;
+	  	color: #272727;
+	  }
+	  #footer{
+	  	margin-top: 15px;
+	  	border-top: 4px solid #F08D18;
+	  	background: #4B4A48;
+	  }
+	  #footer h3,#footer a,#footer .k p{
+	  	color: #fff;
+	  	line-height: 30px;
+	  }
+	  #footer h3{
+	  	font-size: 16px;
+	  	font-weight: normal;
+	  }
+	  #footer a,#footer .k p{
+	  	font-size: 12px;
+	  }
+	  #footer .k{
+	  	width: 1140px;
+	  	margin: 0 auto;
+	  	padding-top: 12px;
+	  }
+	  #footer .k1,#footer .k2,#footer .k3,#footer .k4,#footer .k5{
+	  	float: left;
+	  }
+	  #footer .k1{
+	  	width: 170px;
+	  }
+	  #footer .k2{
+	  	width: 180px;
+	  }
+	  #footer .k3{
+	  	width: 170px;
+	  }
+	  #footer .k4{
+	  	width: 170px;
+	  }
+	  #footer .k5{
+	  	width: 300px;
+	  }
+	  #footer .k6{
+	  	padding-bottom: 30px;
+	  	border-bottom: 1px solid #B3B3B3;
+	  }
+	  #footer .k .p{
+	  	line-height: 65px;
+	  	text-align: left;
+	  	border-bottom: 1px dashed #EF8D18;
+	  }
+	  #footer .k p{
+	  	line-height: 65px;
+	  }
+	  #footer .k p span{
+	  	float: right;
+	  }
+		@media screen and (max-width: 800px){
+			.a{
+				height: 50px;
+				line-height: 50px;/*
+				background-color: darkblue;*/
+			}
+			.b{
+				height: 50px;
+				line-height: 50px;
+				/*background: lightgreen;*/
+			}
+			.c{
+				height: 150px;
+				line-height: 150px;
+				/*background: blue;*/
+			}
+		}
+		@media screen and (min-width: 801px) /*and (max-width: 1200px)*/{
+			.a{
+				float: left;
+				width: 20%;
+				height: 300px;
+				line-height: 300px;
+				/*background: darkblue;*/
+			}
+			.bcd{
+				float: right;
+				width: 80%;
+			}
+			.b{
+				height: 50px;
+				line-height: 50px;
+				/*background: lightgreen;*/
+			}
+			.c{
+				height: 250px;
+				line-height: 250px;
+				/*background: blue;*/
+			}
+		}
+		@media screen and (min-width: 1201px) {
+			/*.a{
+				float: left;
+				width: 20%;
+				height: 300px;
+				line-height: 300px;
+				background: darkblue;
+			}
+			.bcd{
+				width: 80%;
+				float: right;
+			}
+			.b{
+				height: 100px;
+				line-height: 100px;
+				background: green;
+			}*/
+			.c{
+				float: left;
+				width: 70%;/*
+				height: 200px;
+				line-height: 200px;
+				background: blue;*/
+			}
+			.d{
+				float: right;
+				display: block;
+				width: 30%;
+				height: 250px;
+				line-height: 250px;
+				background: lightblue;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="header" class="gwidth clearfix">
+		<div class="l">
+			<img class="img1" src="images/h1.gif" alt="">
+			<img src="images/h2.gif" alt="">
+		</div>
+		<div class="r">
+			<ul>
+				<li><a class="li1" href="">登录</a>&nbsp;&nbsp;</li>
+				<li><a href="">|&nbsp;&nbsp;免费注册  |&nbsp;&nbsp;</a></li>
+				<li><a href="">关于合记  |&nbsp;&nbsp;</a></li>
+				<li><a href="">帮助中心  |&nbsp;&nbsp;</a></li>
+				<li><span class="qq"><span class="q"><a href="">QQ交谈</a></span></span></li>
+			</ul>
+			<div><img src="images/h4.png" alt="">0532-83781666/888</div>
+		</div>
+	</div>
+	<div id="nav" class="gwidth">
+		<ul>
+			<li class="n1"><a href="">网站首页</a></li>
+			<li><a href="">企业包车</a></li>
+			<li><a href="">商务用车</a></li>
+			<li><a href="">婚庆用车</a></li>
+			<li><a href="">代驾租车</a></li>
+			<li><a href="">自驾租车</a></li>
+			<li><a href="">旅游用车</a></li>
+			<li><a href="">车型查询</a></li>
+			<li><a href="">特惠活动</a></li>
+		</ul>
+	</div>
+	<div id="main" class="gwidth">
+		<div class="m1">
+			<ul>
+				<li class="act">在线订车</li>
+				<li>车型分类</li>
+			</ul>
+			<div class="contents">
+				<div class="show">
+					<form>
+						取车时间：<input class="i1" type="text" value="青岛市宁夏路89号"><span class="sjx"></span><br>
+						还车时间：<input class="i1" type="text" value="青岛市宁夏路89号"><span class="sjx"></span><br>
+						取车时间：<input class="i2" type="text" value="2014-08-11"><span class="sjx"></span><input class="i2 ii2" type="text" value="13:00"><span class="sjx"></span><br>
+						还车时间：<input class="i2" type="text" value="2014-08-11" ><span class="sjx"></span><input class="i2 ii2" type="text" value="13:00"><span class="sjx"></span>
+						<input class="i3" type="button" name="立即订车" value="立即订车">
+					</form>
+				</div>
+				<div>车型分类的内容</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+	<script>
+		$('#main .m1 li').click(function(event) {
+			$(this).addClass('act').siblings().removeClass('act');
+		  $('#main .m1 .contents div').eq($(this).index()).addClass('show').siblings().removeClass('show');
+		});
+	</script>
+	<div id="content" class="gwidth clearfix">
+		<div class="t clearfix">
+			<div class="l clearfix">
+				<div class="pp"><p class="p1">热门车型</p><p class="p2">更多+</p></div>
+				<div class="div">
+					<span><img src="images/c4.gif" alt=""></span>
+					<img src="images/c1.gif" alt=""><p><span class="jc">丰田凯美瑞</span>/5座/三厢</p>
+				</div>
+				<div class="div">
+					<span><img src="images/c4.gif" alt=""></span>
+					<img src="images/c2.gif" alt=""><p><span class="jc">别克君威</span>/5座/三厢</p>
+				</div>
+				<div class="div">
+					<span><img src="images/c4.gif" alt=""></span>
+					<img class="img" src="images/c3.gif" alt=""><p><span class="jc">江淮瑞风</span>/8座/两厢</p>
+				</div>
+			</div>
+			<div class="r">
+				<div class="pp"><p class="p1">特色服务</p><p class="p2">更多+</p></div>
+				<div class="div">
+					<img src="images/c5.gif" alt="">
+					<img class="img" src="images/c6.gif" alt="">
+					<img class="img" src="images/c7.gif" alt="">
+					<img src="images/c8.gif" alt="">
+					<img src="images/c9.gif" alt="">
+					<img class="img" src="images/c10.gif" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="c clearfix">
+			<div class="zuo">
+				<span class="c1">1</span>
+				<span class="c2"><p class="ccc cc1">制定行程</p><p class="ccc cc2">选择取车还车门店及时间</p></span>
+			</div>
+			<div class="zhong">
+				<span class="c1">2</span>
+				<span class="c2"><p class="ccc cc1">选择车型</p><p class="ccc cc2">多款车型供您挑选</p></span>
+			</div>
+			<div class="you">
+				<span class="c1">3</span>
+				<span class="c2"><p class="ccc cc1">提交订单</p><p class="ccc cc2">松下单，开始旅行</p></span>
+			</div>
+		</div>
+		<div class="b  clearfix">
+			<div class="l">
+				<div class="pp"><p class="p1">特惠活动</p><p class="p2">更多+</p></div>
+				<div class="div">
+					<img src="images/cb1.gif" alt="">
+					<p>会员专享特权</p>
+				</div>
+				<div class="div">
+					<img src="images/cb2.gif" alt="">
+					<p>国庆节租六赠一</p>
+				</div>
+				<div class="div">
+					<img class="img img3" src="images/cb3.gif" alt="">
+					<p>中秋节租二赠一</p>
+				</div>
+				<div class="div">
+					<img class="img" src="images/cb4.gif" alt="">
+					<p>端午节租二赠一</p>
+				</div>
+				<div class="div">
+					<img class="img img5" src="images/cb5.gif" alt="">
+					<p>清明节租二赠一</p>
+				</div>
+			</div>
+			<div class="r">
+				<div class="pp"><p class="p1">租车常识</p><p class="p2">更多+</p></div>
+				<ul>
+					<li><a href="#">青岛租车需要的手续有哪些？</a></li>
+					<li><a href="#">租车过程中车辆出现故障如何处理？</a></li>
+					<li><a href="#">提前还车，怎么办？</a></li>
+					<li><a href="#">长期租车会员有什么优惠？</a></li>
+					<li><a href="#">外地人租车需要准备什么？</a></li>
+					<li><a href="#">和记租车有代驾么？</a></li>
+					<li><a href="#">外地人租车需要准备什么？</a></li>
+					<li><a href="#">和记租车有代驾么？</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="zx  clearfix">
+				<div class="pp"><p class="p1">特惠活动</p><p class="p2">&nbsp;</p></div>
+				<ul>
+					<li>增值服务    |&nbsp;&nbsp;</li>
+					<li>网站地图    |&nbsp;&nbsp;</li>
+					<li>和记微博    |&nbsp;&nbsp;</li>
+					<li>和记博客</li>
+				</ul>
+		</div>
+	</div>
+	<div id="footer" class="gwidth clearfix">
+		<div class="k clearfix">
+			<div class="k1">
+				<h3>关于合记</h3>
+				<ul>
+					<li><a href="">公司简介</a></li>
+					<li><a href="">企业文化</a></li>
+					<li><a href="">企业荣誉</a></li>
+				</ul>
+			</div>
+		  <div class="k2">
+				<h3>新手上车</h3>
+				<ul>
+					<li><a href="">如何注册用户</a></li>
+					<li><a href="">预订演示</a></li>
+					<li><a href="">取消及修改订单</a></li>
+				</ul>
+			</div>
+			<div class="k3">
+				<h3>售后服务	</h3>
+				<ul>
+					<li><a href="">建议专区</a></li>
+					<li><a href="">客户投诉</a></li>
+				</ul>
+			</div>
+			<div class="k4">
+				<h3>会员服务</h3>
+				<ul>
+					<li><a href="">忘记密码</a></li>
+					<li><a href="">积分说明</a></li>
+				</ul>
+			</div>
+			<div class="k5">
+				<h3>联系我们</h3>
+				<ul>
+					<li><a href="">地址：青岛市宁夏路89号210室（五星电器院内</a></li>
+					<li><a href="">电话：0532-83781666     83781888</a></li>
+					<li><a href="">手机：15605320788</a></li>
+				</ul>
+			</div>
+			<div class="k6"><img src="images/f1.gif" alt=""></div>
+			<p class="p">Copyright © 2014-2015 青岛和记汽车服务有限公司 版权所有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;鲁ICP备14005716号<span>版权声明   |   站长统计</span></p>
+			<p>友情链接：青岛租车 | 青岛汽车租赁 | 青岛婚庆租车 | 青岛包车</p>
+		</div>
+	</div>
+</body>
+</html>
